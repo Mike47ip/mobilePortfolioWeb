@@ -1,8 +1,89 @@
-h1 {
-  color: red;
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body{
-  margin:auto;
-  height:auto;
+body {
+  overflow-x: hidden;
+  max-width: 375px;
+  margin: auto;
+  height: auto;
+}
+
+nav {
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+img {
+  width: 26px;
+  height: auto;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+p {
+  font-family: "Inter";
+  margin-top: 20px;
+  font-style: normal;
+  font-weight: 390;
+  font-size: 20px;
+  line-height: 28px;
+  width: 400px;
+  text-align: center;
+}
+
+h2 {
+  padding-top: 20px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  color: #36b37e;
+}
+
+.Port {
+  background-image: url(/images/header-illsutration-mobile.png);
+}
+
+.downarrow {
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+}
+
+.downarrow > img {
+  width: 40px;
+  height: auto;
+}
+
+#SocMediaHand {
+  display: flex;
+  justify-content: center;
+  gap: 19px;
+  margin-top: 30px;
+}
+
+#SocMediaHand li {
+  list-style: none;
+}
+
+#SocMediaHand li a {
+  font-size: 25px;
+  color: #505f79;
 }
