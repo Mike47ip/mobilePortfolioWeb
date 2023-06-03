@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
   padding: 0;
@@ -28,37 +28,39 @@ img {
 h1 {
   font-family: "Inter", sans-serif;
   font-style: bold;
-  font-weight: 700;
+  font-weight: 700px;
   font-size: 45px;
   line-height: 52px;
   text-align: center;
   color: #172b4d;
+  margin-top: 32px;
 }
 
 p {
   font-family: "Inter", sans-serif;
-  margin-top: 12px;
+  margin-top: 19px;
   font-style: normal;
-  font-weight: 390;
+  font-weight: 500px;
   font-size: 20px;
   line-height: 28px;
-  width: 400px;
   text-align: center;
 }
 
 h2 {
-  padding-top: 20px;
   font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 42px;
+  font-style: bold;
+  font-weight: 600px;
+  font-size: 45px;
+  line-height: 52px;
   text-align: center;
   color: #36b37e;
+  margin-top: 15px;
 }
 
 .Port {
   background-image: url(/images/header-illsutration-mobile.png);
+  display:flex;
+  flex-direction: column;
 }
 
 .downarrow {
