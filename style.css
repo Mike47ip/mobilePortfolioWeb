@@ -20,7 +20,7 @@ body {
   width: 375px;
   display: flex;
   justify-content: space-between;
-  background: #f3f3f3;
+  background:  #fff;
 }
 
 .logo {
@@ -73,7 +73,7 @@ footer a {
 main {
   width: 375px;
   height: auto;
-  background: #f3f3f3;
+  background:  #fff;
 }
 
 .porfolio {
