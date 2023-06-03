@@ -7,8 +7,6 @@
   scroll-behavior: smooth;
 }
 
-
-
 body {
   overflow-x: hidden;
   max-width: 375px;
@@ -20,7 +18,7 @@ body {
   width: 375px;
   display: flex;
   justify-content: space-between;
-  background:  #fff;
+  background: #fff;
 }
 
 .logo {
@@ -73,7 +71,7 @@ footer a {
 main {
   width: 375px;
   height: auto;
-  background:  #fff;
+  background: #fff;
 }
 
 .porfolio {
@@ -217,8 +215,8 @@ p {
   line-height: 16px;
   color: #3a4a42;
 }
-.button:hover{
-  color:rgb(36, 33, 33);
+.button:hover {
+  color: rgb(36, 33, 33);
 }
 .button {
   padding: 8px;
