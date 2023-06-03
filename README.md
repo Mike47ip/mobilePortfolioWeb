@@ -244,7 +244,8 @@ Coming soon
 
 - GitHub: [@githubhandle](https://github.com/Mike47ip)
 - Twitter: [@twitterhandle](https://twitter.com/Mikepee47)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/MichaelOseiDarkwah)
+- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/michael-darkwah-81a039141/)
+- Facebook: [@facebook](https://web.facebook.com/profile.php?id=100089565852279)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
