@@ -7,6 +7,8 @@
   scroll-behavior: smooth;
 }
 
+
+
 body {
   overflow-x: hidden;
   max-width: 375px;
@@ -215,7 +217,9 @@ p {
   line-height: 16px;
   color: #3a4a42;
 }
-
+.button:hover{
+  color:rgb(36, 33, 33);
+}
 .button {
   padding: 8px;
   background: #36b37f;
