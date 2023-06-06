@@ -344,9 +344,13 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-image: url(./Images/illustration-contact-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
-.contact p {
+.contact h2 {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -360,16 +364,15 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 24px 70px;
-  background-image: url(./Images/illustration-contact-mobile.png);
+  /* padding: 24px 24px 70px; */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
 }
 
 #fname {
-  padding: 10px;
-  width: 327px;
+  /* padding: 10px;
+  width: 327px; */
   border: 1px solid #d0d9d4;
   border-radius: 4px;
   font-family: "Inter", sans-serif;
@@ -381,8 +384,8 @@ form {
 }
 
 #email {
-  padding: 10px;
-  width: 327px;
+  /* padding: 10px; */
+  /* width: 327px; */
   border: 1px solid #d0d9d4;
   border-radius: 4px;
   font-family: "Inter", sans-serif;
@@ -391,6 +394,21 @@ form {
   font-size: 15px;
   line-height: 24px;
   color: #6b778c;
+}
+
+#name, #email {
+  width: 327px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  border: 1px solid #D0D9D4;
+  padding: 15px 16px;
+}
+
+#message {
+  border: 1px solid #60C095;
+  width: 327px;
+  padding: 75px 0;
+  border-radius: 8px;
 }
 
 #type {
