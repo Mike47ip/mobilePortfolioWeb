@@ -361,7 +361,6 @@ form {
   flex-direction: column;
   align-items: center;
   padding: 24px 24px 70px;
-
 }
 
 #fname {
@@ -414,7 +413,6 @@ footer {
   background-size: auto;
   background-repeat: no-repeat;
   background-position: right;
-
 }
 
 footer .social {
