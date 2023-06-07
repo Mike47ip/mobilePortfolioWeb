@@ -139,8 +139,14 @@ I would like to thank all Micronauts for their support
 
 This project is [MIT](https://github.com/Kwaku28/Portfolio-Mobile/blob/toolbar-headline-section/MIT.md) licensed.
 
-<!-- Contributing -->
-If you want to contribute to my project and make it better, your help is very welcome. Contributing is also a great way to learn more about social coding on Github, new technologies and and their ecosystems and how to make constructive, helpful bug reports, feature requests and the noblest of all contributions: a good, clean pull request.
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](https://github.com/Mike47ip/mobilePortfolioWeb/issues).
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
