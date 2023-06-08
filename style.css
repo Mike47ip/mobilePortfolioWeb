@@ -100,6 +100,45 @@ main {
     flex-direction: column;
     align-items: center;
   }
+  #fname {
+    padding: 10px;
+    width: 327px;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  #email {
+    padding: 10px;
+    width: 327px;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  #type {
+    padding: 10px;
+    width: 327px;
+    height: 114px;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #091e42;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -144,16 +183,57 @@ main {
     margin-top: 2px;
   }
 
-/* .contact {
+  /* .contact {
   display: grid;
   grid-template-columns: 50% 50%;
 
 } */
 
-   .contact p {
-    float:left;
+  .contact p {
+    float: left;
     margin-left: 50px;
-   }
+    margin-right:15px;
+  }
+
+  #fname {
+    padding: 10px;
+    width: 500px;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  #email {
+    padding: 10px;
+    width: 500px;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  #type {
+    padding: 10px;
+    width: 500px;
+    height: 114px;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #091e42;
+  }
 }
 
 /* .headerSubMenu li {
@@ -426,8 +506,6 @@ p {
   border-radius: 8px;
 }
 
-
-
 .contact p {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -443,46 +521,6 @@ form {
   flex-direction: column;
   align-items: center;
   padding: 24px 24px 70px;
-}
-
-#fname {
-  padding: 10px;
-  width: 327px;
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #6b778c;
-}
-
-#email {
-  padding: 10px;
-  width: 327px;
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #6b778c;
-}
-
-#type {
-  padding: 10px;
-  width: 327px;
-  height: 114px;
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #091e42;
 }
 
 footer {
