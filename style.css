@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700;900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700;900&display=swap");
 
 * {
   padding: 0;
@@ -16,10 +15,9 @@ body {
 }
 
 .header {
-  width: 375px;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: space-between;
-  background: #fff;
 }
 
 .logo {
@@ -70,9 +68,7 @@ footer a {
 }
 
 main {
-  
   height: auto;
-  background: #fff;
 }
 
 .porfolio {
@@ -85,23 +81,104 @@ main {
   background-repeat: no-repeat;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
+  .headerSubMenu li {
+    display: none;
+  }
 
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 24px;
+    background-image: url(./Images/illustration-aboutme-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .porfolio {
     background-image: url(./images/header-llustration-desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 850px;
   }
-  .container {   
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  h1 {
+    margin-top: 150px;
+  }
+  .logo,
+  .vector {
+    display: none;
+  }
+
+  .title {
+    width: 385px;
+  }
+
+  .tools {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 24px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    background-image: url(/images/Group.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 2px;
+  }
+
+/* .contact {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 50% 50%;
 
- 
-    
+} */
+
+   .contact p {
+    float:left;
+    margin-left: 50px;
+   }
+}
+
+/* .headerSubMenu li {
+  display:none;
   
-}
+} */
+
+.headerSubMenu {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  position: relative;
+  margin-top: -20px;
 }
 
+.headerSubMenu li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  list-style: none;
+}
 
 h1 {
   font-family: "Inter", sans-serif;
@@ -256,16 +333,6 @@ p {
   background: #008552;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 24px;
-  background-image: url(./Images/illustration-aboutme-mobile.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .about > h2 {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -359,11 +426,7 @@ p {
   border-radius: 8px;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .contact p {
   font-family: "Inter", sans-serif;
