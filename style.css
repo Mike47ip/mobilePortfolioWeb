@@ -202,7 +202,6 @@ p {
   border-radius: 8px;
   padding-bottom: 24px;
   gap: 8px;
- 
 }
 
 .text {
@@ -388,16 +387,6 @@ footer .social {
 }
 
 @media screen and (max-width: 768px) {
-
-
-  
-    
-  
-
-  
-    
-  
-
   .headerSubMenu li {
     display: none;
   }
@@ -417,9 +406,6 @@ footer .social {
     flex-direction: column;
     align-items: center;
   }
-
-  
-  
 
   #fname {
     padding: 10px;
@@ -531,7 +517,6 @@ footer .social {
     background: #ebf0ee;
     display: flex;
     flex-direction: column;
-   
   }
 }
 
