@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Roboto&display=swap");
 
 * {
   padding: 0;
@@ -14,80 +14,407 @@ body {
   height: auto;
 }
 
-nav {
-  margin-top: 30px;
+.header {
+  width: 375px;
   display: flex;
-  justify-content: flex-end;
-  padding: 0 20px;
+  justify-content: space-between;
+  background: #fff;
 }
 
-img {
-  width: 26px;
+.logo {
+  padding-left: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+footer a {
+  height: 186px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  margin-bottom: 147px;
+}
+
+.logo a {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #28352f;
+}
+
+.vector {
+  margin-top: 17px;
+  margin-right: 35px;
+  width: 18px;
+  height: 12px;
+  right: 10%;
+  z-index: 5;
+}
+
+.vector span {
+  display: block;
+  width: 100%;
+  border: 1px solid #28352f;
+}
+
+.vector span:nth-child(2) {
+  margin: 2px 0;
+}
+
+main {
+  width: 375px;
   height: auto;
+  background: #fff;
+}
+
+.porfolio {
+  display: flex;
+  flex-direction: column;
+  height: 650px;
+  padding: 60px 24px 0 24px;
+  background-image: url(./Images/header-illsutration-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 h1 {
   font-family: "Inter", sans-serif;
-  font-style: bold;
-  font-weight: 700px;
-  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
   line-height: 52px;
   text-align: center;
   color: #172b4d;
-  margin-top: 32px;
-}
-
-p {
-  font-family: "Inter", sans-serif;
-  margin-top: 19px;
-  font-style: normal;
-  font-weight: 500px;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
 }
 
 h2 {
+  padding-top: 20px;
   font-family: "Inter", sans-serif;
-  font-style: bold;
-  font-weight: 600px;
-  font-size: 45px;
-  line-height: 52px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
   text-align: center;
   color: #36b37e;
-  margin-top: 15px;
 }
 
-.Port {
-  background-image: url(/images/header-illsutration-mobile.png);
-  display: flex;
-  flex-direction: column;
-  padding: 0 20px;
+p {
+  padding-top: 38px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #172b4d;
 }
 
-.downarrow {
-  display: flex;
+.social {
+  display: inline-flex;
   justify-content: center;
-  margin-top: 45px;
+  padding-top: 45px;
+  gap: 20px;
 }
 
-.downarrow > img {
-  width: 40px;
-  height: auto;
-}
-
-#SocMediaHand {
-  display: flex;
-  justify-content: center;
-  gap: 19px;
-  margin-top: 30px;
-}
-
-#SocMediaHand li {
+.social li {
   list-style: none;
 }
 
-#SocMediaHand li a {
-  font-size: 25px;
+.social li a {
+  font-size: 20px;
   color: #505f79;
+}
+
+.disabled {
+  text-align: center;
+  margin-top: 65px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.head {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  color: #172b4d;
+  padding: 24px;
+}
+
+.span {
+  width: 48px;
+  border: 3px solid #36b37e;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto;
+  gap: 24px;
+  padding: 62px 24px;
+}
+
+.card {
+  height: 474px;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  background: #ebf0ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 8px;
+  padding-bottom: 24px;
+  gap: 8px;
+  height: 222px;
+}
+
+.text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #3a4a42;
+}
+
+.server {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 0;
+  gap: 8px;
+}
+
+.server li {
+  padding: 8px 12px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+}
+
+.button {
+  padding: 8px;
+  background: #36b37f;
+  border-radius: 4px;
+  border-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.button:hover {
+  background: #36b37f;
+}
+
+.button:active {
+  background: #008552;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  background-image: url(./Images/illustration-aboutme-mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.about > h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.about > p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #42526e;
+  padding-bottom: 24px;
+}
+
+.about .button {
+  margin-bottom: 60px;
+}
+
+.tools {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 24px;
+}
+
+.works {
+  width: 327px;
+  height: 352px;
+  background: #ebf0ee;
+  border: 1px solid #c1c7d0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.works li {
+  list-style: none;
+}
+
+.languages {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+}
+
+.frameworks {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+}
+
+.skills {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #344563;
+}
+
+.language {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.language li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
+  list-style: none;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+  padding: 60px 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 24px 70px;
+  background-image: url(./Images/illustration-contact-mobile.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+#fname {
+  padding: 10px;
+  width: 327px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+#email {
+  padding: 10px;
+  width: 327px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+#type {
+  padding: 10px;
+  width: 327px;
+  height: 114px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0;
+  background: #f3f3f3;
+}
+
+footer .social {
+  padding-top: 0;
 }
