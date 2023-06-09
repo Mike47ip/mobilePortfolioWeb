@@ -9,7 +9,7 @@
 
 body {
   overflow-x: hidden;
-  margin: auto;
+  margin: 0;
   height: auto;
 }
 
@@ -68,175 +68,28 @@ footer a {
 
 main {
   height: auto;
+  overflow-x: hidden;
 }
-
 .porfolio {
   display: flex;
   flex-direction: column;
-  height: 650px;
+  width: 100%;
+  overflow-x: hidden;
   padding: 60px 24px 0 24px;
-  background-image: url(./images/header-illsutration-mobile.png);
+  background-image: url(images/header-illsutration-mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-@media screen and (max-width: 768px) {
-  .headerSubMenu li {
-    display: none;
-  }
-
-  .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 24px;
-    background-image: url(./Images/illustration-aboutme-mobile.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #fname {
-    padding: 10px;
-    width: 327px;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #6b778c;
-  }
-
-  #email {
-    padding: 10px;
-    width: 327px;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #6b778c;
-  }
-
-  #type {
-    padding: 10px;
-    width: 327px;
-    height: 114px;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #091e42;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .porfolio {
-    background-image: url(./images/header-llustration-desktop.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 850px;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  h1 {
-    margin-top: 150px;
-  }
-
-  .logo,
-  .vector {
-    display: none;
-  }
-
-  .title {
-    width: 385px;
-  }
-
-  .tools {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 24px;
-  }
-
-  .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 60px;
-    background-image: url(/images/Group.png);
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: right;
-    margin-top: 2px;
-  }
-
-  /* .contact {
-  display: grid;
-  grid-template-columns: 50% 50%;
-
-} */
-
-  .contact p {
-    float: left;
-    margin-left: 50px;
-    margin-right: 15px;
-  }
-
-  #fname {
-    padding: 10px;
-    width: 500px;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #6b778c;
-  }
-
-  #email {
-    padding: 10px;
-    width: 500px;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #6b778c;
-  }
-
-  #type {
-    padding: 10px;
-    width: 500px;
-    height: 114px;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #091e42;
-  }
+.card {
+  height: 474px;
+  width: 327px;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  background: #ebf0ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .headerSubMenu {
@@ -334,19 +187,9 @@ p {
 
 .container {
   display: grid;
-  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: auto;
   gap: 24px;
   padding: 62px 24px;
-}
-
-.card {
-  height: 474px;
-  border: 1px solid #d0d9d4;
-  border-radius: 8px;
-  background: #ebf0ee;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .title {
@@ -358,10 +201,12 @@ p {
   border-radius: 8px;
   padding-bottom: 24px;
   gap: 8px;
-  height: 222px;
+  /* height: 222px; */
 }
 
 .text {
+  text-align: center;
+  padding: 0 5px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -371,14 +216,15 @@ p {
 }
 
 .server {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 0;
   gap: 8px;
 }
 
 .server li {
-  padding: 8px 12px;
+  padding: 5px 6px;
   background: #ebf0ee;
   border-radius: 4px;
   list-style: none;
@@ -436,12 +282,14 @@ p {
 
 .tools {
   display: grid;
+  padding-left: 100px;
+  padding-right: 100px;
   grid-template-rows: auto auto auto;
-  gap: 24px;
+  gap: 15px;
 }
 
 .works {
-  width: 327px;
+  width: 250px;
   height: 352px;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
@@ -511,14 +359,14 @@ p {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-  padding: 60px 24px;
+  padding: 0px 24px;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 24px 70px;
+  padding: 0 24px 70px;
 }
 
 footer {
@@ -535,4 +383,229 @@ footer {
 
 footer .social {
   padding-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  #fname {
+    width: 700px;
+  }
+
+  #email {
+    width: 400px;
+  }
+
+  #type {
+    width: 400px;
+  }
+
+  .headerSubMenu li {
+    display: none;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 24px;
+    background-image: url(./Images/illustration-aboutme-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact p {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  #fname {
+    padding: 10px;
+    width: 327px;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  #email {
+    padding: 10px;
+    width: 327px;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  #type {
+    padding: 10px;
+    width: 327px;
+    height: 114px;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #091e42;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .porfolio {
+    background-image: url(./images/header-llustration-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 850px;
+  }
+
+  #fname {
+    width: 700px;
+  }
+
+  .work {
+    width: 250px;
+  }
+
+  #email {
+    width: 400px;
+  }
+
+  #type {
+    width: 400px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 24px;
+  }
+
+  h1 {
+    margin-top: 150px;
+  }
+
+  .logo,
+  .vector {
+    display: none;
+  }
+
+  .tools {
+    display: grid;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    background-image: url(/images/Group.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 2px;
+  }
+
+  .card {
+    height: 474px;
+    width: 250px;
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+    background: #ebf0ee;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+  }
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact p {
+  padding-bottom: 50px;
+}
+
+#fname {
+  padding: 10px;
+  width: 400px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+#email {
+  padding: 10px;
+  width: 400px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+#type {
+  padding: 10px;
+  width: 400px;
+  height: 114px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+@media screen and (min-width: 1024px) {
+  #fname {
+    width: 530px;
+  }
+
+  #email {
+    width: 530px;
+  }
+
+  #type {
+    width: 530px;
+  }
+
+  .card {
+    height: 474px;
+    width: 350px;
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+    background: #ebf0ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
 }
