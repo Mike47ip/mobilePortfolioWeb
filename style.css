@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@400;500;700;900&display=swap");
 
 * {
   padding: 0;
@@ -9,16 +9,14 @@
 
 body {
   overflow-x: hidden;
-  max-width: 375px;
-  margin: auto;
+  margin: 0;
   height: auto;
 }
 
 .header {
-  width: 375px;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-content: space-between;
-  background: #fff;
 }
 
 .logo {
@@ -69,26 +67,56 @@ footer a {
 }
 
 main {
-  width: 375px;
   height: auto;
-  background: #fff;
+  overflow-x: hidden;
 }
 
 .porfolio {
   display: flex;
   flex-direction: column;
-  height: 650px;
+  width: 100%;
+  overflow-x: hidden;
   padding: 60px 24px 0 24px;
-  background-image: url(./Images/header-illsutration-mobile.png);
+  background-image: url(images/header-illsutration-mobile.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-h1 {
+.card {
+  height: 474px;
+  width: 327px;
+  border: 1px solid #d0d9d4;
+  border-radius: 8px;
+  background: #ebf0ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.headerSubMenu {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  position: relative;
+  margin-top: -20px;
+}
+
+.headerSubMenu li {
   font-family: "Inter", sans-serif;
   font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  list-style: none;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-style: bold;
   font-weight: 700;
-  font-size: 42px;
+  font-size: 43px;
   line-height: 52px;
   text-align: center;
   color: #172b4d;
@@ -97,9 +125,9 @@ h1 {
 h2 {
   padding-top: 20px;
   font-family: "Inter", sans-serif;
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 42px;
   line-height: 42px;
   text-align: center;
   color: #36b37e;
@@ -160,19 +188,9 @@ p {
 
 .container {
   display: grid;
-  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-columns: auto;
   gap: 24px;
   padding: 62px 24px;
-}
-
-.card {
-  height: 474px;
-  border: 1px solid #d0d9d4;
-  border-radius: 8px;
-  background: #ebf0ee;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .title {
@@ -184,10 +202,11 @@ p {
   border-radius: 8px;
   padding-bottom: 24px;
   gap: 8px;
-  height: 222px;
 }
 
 .text {
+  text-align: center;
+  padding: 0 5px;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -197,14 +216,15 @@ p {
 }
 
 .server {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 0;
   gap: 8px;
 }
 
 .server li {
-  padding: 8px 12px;
+  padding: 5px 6px;
   background: #ebf0ee;
   border-radius: 4px;
   list-style: none;
@@ -237,16 +257,6 @@ p {
   background: #008552;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 24px;
-  background-image: url(./Images/illustration-aboutme-mobile.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
 .about > h2 {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -272,12 +282,14 @@ p {
 
 .tools {
   display: grid;
+  padding-left: 100px;
+  padding-right: 100px;
   grid-template-rows: auto auto auto;
-  gap: 24px;
+  gap: 15px;
 }
 
 .works {
-  width: 327px;
+  width: 250px;
   height: 352px;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
@@ -340,12 +352,6 @@ p {
   border-radius: 8px;
 }
 
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .contact p {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -353,54 +359,15 @@ p {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-  padding: 60px 24px;
+  padding-bottom: 50px;
+  padding-top: 50px;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 24px 24px 70px;
-}
-
-#fname {
-  padding: 10px;
-  width: 327px;
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #6b778c;
-}
-
-#email {
-  padding: 10px;
-  width: 327px;
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #6b778c;
-}
-
-#type {
-  padding: 10px;
-  width: 327px;
-  height: 114px;
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #091e42;
+  padding: 0 24px 70px;
 }
 
 footer {
@@ -418,3 +385,208 @@ footer {
 footer .social {
   padding-top: 0;
 }
+
+@media screen and (max-width: 768px) {
+  .headerSubMenu li {
+    display: none;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 24px;
+    background-image: url(./Images/illustration-aboutme-mobile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #fname {
+    padding: 10px;
+    width: 327px;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  #email {
+    padding: 10px;
+    width: 327px;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  #type {
+    padding: 10px;
+    width: 327px;
+    height: 114px;
+    border: 1px solid #d0d9d4;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #091e42;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .porfolio {
+    background-image: url(./images/header-llustration-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 850px;
+  }
+
+  #fname {
+    width: 700px;
+  }
+
+  .work {
+    width: 250px;
+  }
+
+  #email {
+    width: 400px;
+  }
+
+  #type {
+    width: 400px;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 24px;
+  }
+
+  h1 {
+    margin-top: 150px;
+  }
+
+  .logo,
+  .vector {
+    display: none;
+  }
+
+  .tools {
+    display: grid;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+    background-image: url(/images/Group.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-top: 2px;
+  }
+
+  .card {
+    height: 474px;
+    width: 250px;
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+    background: #ebf0ee;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+
+#fname {
+  padding: 10px;
+  width: 400px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+#email {
+  padding: 10px;
+  width: 400px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+#type {
+  padding: 10px;
+  width: 400px;
+  height: 114px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+@media screen and (min-width: 1024px) {
+  #fname {
+    width: 530px;
+  }
+
+  #email {
+    width: 530px;
+  }
+
+  #type {
+    width: 530px;
+  }
+
+  .card {
+    height: 474px;
+    width: 350px;
+    border: 1px solid #d0d9d4;
+    border-radius: 8px;
+    background: #ebf0ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+
