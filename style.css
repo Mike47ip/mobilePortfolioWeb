@@ -227,10 +227,14 @@ p {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
+  transition: all 1s ease;
 }
 
 .button:hover {
-  background: #36b37f;
+  color: #36b37f;
+  background-color: #fff;
+  border: 1px solid #36b37f;
+  cursor: pointer;
 }
 
 .button:active {
