@@ -25,7 +25,22 @@ body {
   padding-left: 24px;
   padding-top: 10px;
   padding-bottom: 10px;
+  animation-name: rotateLogo;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
 }
+
+@keyframes rotateLogo {
+  
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+  }
+
 
 footer a {
   height: 186px;
