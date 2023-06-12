@@ -187,6 +187,20 @@ p {
   transition: all 0.3s ease;
 }
 
+.server li {
+  padding: 5px 6px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  transition: background-color 0.5s ease;
+}
+
 .headerSubMenu li:hover {
   background-color: #172b4d;
   color: white;
@@ -248,20 +262,6 @@ p {
   flex-wrap: wrap;
   padding: 0;
   gap: 8px;
-}
-
-.server li {
-  padding: 5px 6px;
-  background: #ebf0ee;
-  border-radius: 4px;
-  list-style: none;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
-  transition: background-color 0.5s ease;
 }
 
 .server :hover {
