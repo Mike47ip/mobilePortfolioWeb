@@ -110,6 +110,14 @@ main {
   line-height: 16px;
   color: #3a4a42;
   list-style: none;
+  padding: 5px 7px;
+  border-radius: 0.3rem;
+  transition: background-color 0.9s ease;
+}
+
+.headerSubMenu li:hover {
+  background-color: #172b4d;
+  color: white;
 }
 
 h1 {
@@ -234,6 +242,11 @@ p {
   font-size: 12px;
   line-height: 16px;
   color: #3a4a42;
+  transition: background-color 0.5s ease;
+}
+
+.server :hover {
+  background-color: #5ddfa9;
 }
 
 .button {
@@ -247,10 +260,13 @@ p {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
+  transition: background-color 0.3s ease, width 2s, height 2s;
 }
 
 .button:hover {
-  background: #36b37f;
+  background: #4ada9e;
+  width: 120px;
+  height: auto;
 }
 
 .button:active {
@@ -302,8 +318,12 @@ p {
 
 .works li {
   list-style: none;
+  transition: background-color 0.3 ease;
 }
 
+.work :hover {
+  background-color: #172b4d;
+}
 .languages {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -339,6 +359,11 @@ p {
   flex-wrap: wrap;
 }
 
+.language li:hover {
+  background-color: #344f81;
+  color: white;
+}
+
 .language li {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -350,6 +375,7 @@ p {
   padding: 12px;
   background: #fff;
   border-radius: 8px;
+  transition: all 0.3s ease;
 }
 
 .contact p {
@@ -360,7 +386,6 @@ p {
   line-height: 52px;
   color: #172b4d;
   padding-bottom: 50px;
-
 }
 
 form {
@@ -589,4 +614,3 @@ footer .social {
     justify-content: flex-end;
   }
 }
-
