@@ -93,33 +93,6 @@ main {
   justify-content: flex-end;
 }
 
-.headerSubMenu {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: auto auto auto;
-  gap: 20px;
-  position: relative;
-  margin-top: -20px;
-}
-
-.headerSubMenu li {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
-  list-style: none;
-  padding: 5px 7px;
-  border-radius: 0.3rem;
-  transition: background-color 0.3s ease;
-}
-
-.headerSubMenu li:hover {
-  background-color: #172b4d;
-  color: white;
-}
-
 h1 {
   font-family: "Inter", sans-serif;
   font-style: bold;
@@ -171,6 +144,66 @@ p {
 .disabled {
   text-align: center;
   margin-top: 65px;
+}
+
+.headerSubMenu {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  position: relative;
+  margin-top: -20px;
+}
+
+.headerSubMenu li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  list-style: none;
+  padding: 5px 7px;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease;
+}
+
+.server li {
+  padding: 5px 6px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  transition: background-color 0.5s ease;
+}
+
+.works li {
+  list-style: none;
+  transition: background-color 0.3 ease;
+}
+
+.language li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
+  list-style: none;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.headerSubMenu li:hover {
+  background-color: #172b4d;
+  color: white;
 }
 
 .projects {
@@ -316,14 +349,10 @@ p {
   align-items: center;
 }
 
-.works li {
-  list-style: none;
-  transition: background-color 0.3 ease;
-}
-
 .work :hover {
   background-color: #172b4d;
 }
+
 .languages {
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -362,20 +391,6 @@ p {
 .language li:hover {
   background-color: #344f81;
   color: white;
-}
-
-.language li {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #36b37e;
-  list-style: none;
-  padding: 12px;
-  background: #fff;
-  border-radius: 8px;
-  transition: all 0.3s ease;
 }
 
 .contact p {
