@@ -18,6 +18,7 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
+  - [🚀 Live Demo](#live-demo)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -134,6 +135,12 @@ If you like this project show your love by leaving a comment
 I would like to thank all Micronauts for their support
 
 <!-- LICENSE -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [My_Portfolio](https://kwaku28.github.io/My-Portfolio/)
 
 ## 📝 License <a name="license"></a>
 
