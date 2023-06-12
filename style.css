@@ -168,20 +168,6 @@ p {
   transition: background-color 0.3s ease;
 }
 
-.server li {
-  padding: 5px 6px;
-  background: #ebf0ee;
-  border-radius: 4px;
-  list-style: none;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
-  transition: background-color 0.5s ease;
-}
-
 .works li {
   list-style: none;
   transition: background-color 0.3 ease;
