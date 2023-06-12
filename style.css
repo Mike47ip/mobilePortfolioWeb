@@ -93,25 +93,6 @@ main {
   justify-content: flex-end;
 }
 
-.headerSubMenu {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: auto auto auto;
-  gap: 20px;
-  position: relative;
-  margin-top: -20px;
-}
-
-.headerSubMenu li {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
-  list-style: none;
-}
-
 h1 {
   font-family: "Inter", sans-serif;
   font-style: bold;
@@ -163,6 +144,66 @@ p {
 .disabled {
   text-align: center;
   margin-top: 65px;
+}
+
+.headerSubMenu {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  position: relative;
+  margin-top: -20px;
+}
+
+.headerSubMenu li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  list-style: none;
+  padding: 5px 7px;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease;
+}
+
+.works li {
+  list-style: none;
+  transition: background-color 0.3 ease;
+}
+
+.language li {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #36b37e;
+  list-style: none;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.server li {
+  padding: 5px 6px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  transition: background-color 0.5s ease;
+}
+
+.headerSubMenu li:hover {
+  background-color: #172b4d;
+  color: white;
 }
 
 .projects {
@@ -223,17 +264,8 @@ p {
   gap: 8px;
 }
 
-.server li {
-  padding: 5px 6px;
-  background: #ebf0ee;
-  border-radius: 4px;
-  list-style: none;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
+.server :hover {
+  background-color: #5ddfa9;
 }
 
 .button {
@@ -247,10 +279,13 @@ p {
   font-size: 17px;
   line-height: 24px;
   color: #fff;
+  transition: background-color 0.3s ease, width 2s, height 2s;
 }
 
 .button:hover {
-  background: #36b37f;
+  background: #4ada9e;
+  width: 120px;
+  height: auto;
 }
 
 .button:active {
@@ -300,8 +335,8 @@ p {
   align-items: center;
 }
 
-.works li {
-  list-style: none;
+.work :hover {
+  background-color: #172b4d;
 }
 
 .languages {
@@ -339,17 +374,9 @@ p {
   flex-wrap: wrap;
 }
 
-.language li {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #36b37e;
-  list-style: none;
-  padding: 12px;
-  background: #fff;
-  border-radius: 8px;
+.language li:hover {
+  background-color: #344f81;
+  color: white;
 }
 
 .contact p {
@@ -360,7 +387,6 @@ p {
   line-height: 52px;
   color: #172b4d;
   padding-bottom: 50px;
-  padding-top: 50px;
 }
 
 form {
@@ -589,4 +615,3 @@ footer .social {
     justify-content: flex-end;
   }
 }
-
