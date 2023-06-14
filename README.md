@@ -18,6 +18,7 @@
   - [Install](#install)
   - [Usage](#usage)
   - [Run tests](#run-tests)
+  - [🚀 Live Demo](#live-demo)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [🔭 Future Features](#future-features)
@@ -135,9 +136,15 @@ I would like to thank all Micronauts for their support
 
 <!-- LICENSE -->
 
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Add a link to your deployed project.
+
+- [My_Portfolio](https://mike47ip.github.io/mobilePortfolioWeb/)
+
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Kwaku28/Portfolio-Mobile/blob/toolbar-headline-section/MIT.md) licensed.
+This project is [MIT](https://github.com/mike47ip/mobilePortfolioWeb/blob/toolbar-headline-section/MIT.md) licensed.
 
 <!-- CONTRIBUTING -->
 
