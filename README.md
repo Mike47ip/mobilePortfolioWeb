@@ -144,7 +144,7 @@ I would like to thank all Micronauts for their support
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Kwaku28/Portfolio-Mobile/blob/toolbar-headline-section/MIT.md) licensed.
+This project is [MIT](https://github.com/mike47ip/mobilePortfolioWeb/blob/toolbar-headline-section/MIT.md) licensed.
 
 <!-- CONTRIBUTING -->
 
