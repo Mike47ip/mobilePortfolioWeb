@@ -11,7 +11,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
-
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -137,7 +137,7 @@ I would like to thank all Micronauts for their support
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Kwaku28/Portfolio-Mobile/blob/toolbar-headline-section/MIT.md) licensed.
+This project is [MIT](https://github.com/Mike47ip/mobilePortfolioWeb/issues) licensed.
 
 <!-- CONTRIBUTING -->
 
