@@ -140,7 +140,7 @@ I would like to thank all Micronauts for their support
 
 > Add a link to your deployed project.
 
-- [My_Portfolio](https://kwaku28.github.io/My-Portfolio/)
+- [My_Portfolio](https://mike47ip.github.io/mobilePortfolioWeb/)
 
 ## 📝 License <a name="license"></a>
 
