@@ -77,7 +77,7 @@ main {
   width: 100%;
   overflow-x: hidden;
   padding: 60px 24px 0 24px;
-  background-image: url("./images/header-illsutration-mobile.png");
+  background-image: url("./Images/header-illsutration-mobile.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -476,7 +476,7 @@ footer .social {
 
 @media screen and (min-width: 768px) {
   .porfolio {
-    background-image: url("./images/header-llustration-desktop.png");
+    background-image: url("./Images/header-llustration-desktop.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 850px;
