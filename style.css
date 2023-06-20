@@ -267,6 +267,11 @@ left:0;
   cursor: pointer;
 }
 
+.menu_items{
+  cursor:pointer;
+  transition: color orange 1.5s ease-in-out;
+}
+
 .nav-links li a {
   text-decoration: none;
   color: #3a4a42;
