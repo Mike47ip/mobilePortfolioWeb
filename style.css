@@ -48,22 +48,12 @@ footer a {
 }
 
 .vector {
-  margin-top: 17px;
+  margin-top: 10px;
   margin-right: 35px;
-  width: 18px;
-  height: 12px;
   right: 10%;
-  z-index: 5;
-}
-
-.vector span {
-  display: block;
-  width: 100%;
-  border: 1px solid #28352f;
-}
-
-.vector span:nth-child(2) {
-  margin: 2px 0;
+  z-index: 1;
+  cursor: pointer;
+  font-size: 30px;
 }
 
 main {
@@ -153,6 +143,7 @@ p {
   gap: 20px;
   position: relative;
   margin-top: -20px;
+  cursor: pointer;
 }
 
 .headerSubMenu li {
@@ -166,6 +157,20 @@ p {
   padding: 5px 7px;
   border-radius: 0.3rem;
   transition: background-color 0.3s ease;
+}
+
+.headerSubMenu li a {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  list-style: none;
+  padding: 5px 7px;
+  border-radius: 0.3rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .works li {
@@ -201,8 +206,61 @@ p {
   transition: background-color 0.5s ease;
 }
 
-.headerSubMenu li:hover {
-  background-color: #172b4d;
+.Popwrapper {
+  /* display:none; */
+  left: 100%;
+  position: fixed;
+  z-index: 2;
+  box-sizing: border-box;
+}
+
+.Xmenu {
+  cursor: pointer;
+  float: right;
+  padding: 10px 40px;
+}
+
+.Xmenu img {
+  width: 20px;
+  height: auto;
+}
+
+.PopupMenu {
+  display: block;
+  padding: 14px;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.PopupMenu ul {
+  padding: 108px 0;
+}
+
+.PopupMenu ul li {
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: bold;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 52px;
+  color: #3a4a42;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.menu_items {
+  cursor: pointer;
+  transition: color orange 1.5s ease-in-out;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #3a4a42;
+}
+
+.headerSubMenu li a:hover {
+  background-color: #313741;
   color: white;
 }
 
@@ -480,6 +538,10 @@ footer .social {
     background-size: cover;
     background-repeat: no-repeat;
     height: 850px;
+  }
+
+  .header {
+    display: none;
   }
 
   #fname {

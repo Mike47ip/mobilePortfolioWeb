@@ -14,7 +14,22 @@
           <a href="#">Welcome</a>
         </div>
 
-        <div class="vector"><ion-icon name="menu-outline"></ion-icon></div>
+        <div class="vector">
+          <ion-icon name="menu-outline"> </ion-icon>
+        </div>
+
+        <div class="Popwrapper">
+          <div id="MobilePopupMenu" class="PopupMenu">
+            <div class="Xmenu">
+              <img src="/Images/X.png" alt="Close Menu Icom" />
+            </div>
+            <ul class="nav-links">
+              <li><a href="#Projects" class="menu_items">Portfolio</a></li>
+              <li><a href="#About"  class="menu_items">About</a></li>
+              <li><a href="#Contact" class="menu_items" >Contact</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -22,9 +37,9 @@
       <section class="porfolio">
         <nav class="hearderSub">
           <ul class="headerSubMenu">
-            <li><a href="#"></a>Portfolio</li>
-            <li><a href="#"></a>About</li>
-            <li><a href="#"></a>Contact</li>
+            <li><a href="#Projects">Portfolio</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
           </ul>
         </nav>
         <h1>Hey there! I'm Michael</h1>
@@ -67,7 +82,7 @@
         </div>
       </section>
 
-      <section class="projects">
+      <section id="Projects" class="projects">
         <h2 class="head">My Recent works</h2>
 
         <div class="span"></div>
@@ -153,7 +168,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section id="About" class="about">
         <h2>About me</h2>
         <p>
           I can help you build a product, feature or website. Look through some
@@ -213,7 +228,7 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section id="Contact" class="contact">
         <p>
           I'm always interested in hearing about new projects, so if you'd like
           to chat please get in touch.
@@ -286,5 +301,7 @@
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
+
+    <script src="index.js"></script>
   </body>
 </html>
