@@ -214,10 +214,6 @@ p {
   box-sizing: border-box;
 }
 
-/* .Popwrapper.active {
-left:0;
-}  */
-
 .Xmenu {
   cursor: pointer;
   float: right;
