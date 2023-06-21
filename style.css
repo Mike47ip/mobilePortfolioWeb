@@ -267,8 +267,8 @@ left:0;
   cursor: pointer;
 }
 
-.menu_items{
-  cursor:pointer;
+.menu_items {
+  cursor: pointer;
   transition: color orange 1.5s ease-in-out;
 }
 
