@@ -364,8 +364,6 @@ left:0;
 
 .button:hover {
   background: #4ada9e;
-  width: 120px;
-  height: auto;
 }
 
 .button:active {
@@ -493,7 +491,6 @@ footer .social {
 }
 
 @media screen and (max-width: 768px) {
-
   /* .mobilepopWindowContainer {
     width: 100vw;
     height: auto;
@@ -565,6 +562,83 @@ footer .social {
     font-size: 15px;
     line-height: 24px;
     color: #091e42;
+  }
+  .Secpopupwin {
+    /* display:none; */
+    position: absolute;
+  }
+
+  /* .paddinwindow {
+    background-color: red;
+  } */
+
+  .containerWin {
+    padding-top: 15px;
+    padding-left: 60px;
+  }
+
+  .cardWin {
+    height: 791px;
+    width: 343px;
+    border: 1px solid #fff;
+    border-radius: 18px;
+    background: #ebf0ee;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .popupWindowImage {
+    padding-top: 15px;
+  }
+
+  .titleWin {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    padding-bottom: 24px;
+    gap: 8px;
+  }
+
+  .titleWin h2 {
+    color: #172b4d;
+    font-family: Inter;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+
+  .server {
+    padding: 8px, 12px, 8px, 12px;
+  }
+
+  .server li {
+    padding: 8px, 12px, 8px, 12px;
+  }
+
+  .Lorem {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 2px 12px 16px 16px;
+  }
+
+  .buttonDiv {
+  display: flex;
+  flex-direction: row;  
+  gap: 10px;
   }
 }
 
