@@ -56,6 +56,10 @@ footer a {
   font-size: 30px;
 }
 
+.Secpopupwin {
+  /* display:none; */
+  position: absolute;
+}
 /* .vector.active {
 position:fixed;
 } */
@@ -563,12 +567,21 @@ footer .social {
     line-height: 24px;
     color: #091e42;
   }
-  .Secpopupwin {
+  .containerWin {
     /* display:none; */
-    position: absolute;
+    display:flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color:rgb(0,0,0,50%);
+    z-index: 10;
+    top:0;
+    
+    overflow: scroll;
   }
 
-  /* .paddinwindow {
+  /* .paddinwindow {y
     background-color: red;
   } */
 
