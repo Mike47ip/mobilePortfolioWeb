@@ -267,14 +267,18 @@ left:0;
   cursor: pointer;
 }
 
-.menu_items{
-  cursor:pointer;
+.menu_items {
+  cursor: pointer;
   transition: color orange 1.5s ease-in-out;
 }
 
 .nav-links li a {
   text-decoration: none;
   color: #3a4a42;
+}
+
+.nav-links li a:hover {
+  color: blue;
 }
 
 .headerSubMenu li a:hover {
@@ -489,6 +493,20 @@ footer .social {
 }
 
 @media screen and (max-width: 768px) {
+
+  /* .mobilepopWindowContainer {
+    width: 100vw;
+    height: auto;
+    z-index: 3;
+    display: none;
+  }
+  
+  .mobilepopupWindow {
+    position: absolute;
+    background-color: #008552;
+  }
+   */
+
   .headerSubMenu li {
     display: none;
   }

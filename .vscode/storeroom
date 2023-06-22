@@ -1,0 +1,84 @@
+        
+        <h2 class="head">My Recent works</h2>
+
+        <div class="span"></div>
+        <div class="container">
+          <div class="card">
+            <div class="title">
+              <h2 class="text">Multi-Post Stories Gain+Glory</h2>
+              <ul class="server">
+                <li>Ruby on rails</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+              </ul>
+              <button type="button" class="button">See Project</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="title">
+              <h2 class="text">Multi-Post Stories Gain+Glory</h2>
+              <ul class="server">
+                <li>Ruby on rails</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+              </ul>
+              <button type="button" class="button">See Project</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="title">
+              <h2 class="text">Multi-Post Stories Gain+Glory</h2>
+              <ul class="server">
+                <li>Ruby on rails</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+              </ul>
+              <button type="button" class="button">See Project</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="title">
+              <h2 class="text">Multi-Post Stories Gain+Glory</h2>
+              <ul class="server">
+                <li>Ruby on rails</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+              </ul>
+              <button type="button" class="button">See Project</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="title">
+              <h2 class="text">Multi-Post Stories Gain+Glory</h2>
+              <ul class="server">
+                <li>Ruby on rails</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+              </ul>
+              <button type="button" class="button">See Project</button>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="title">
+              <h2 class="text">Multi-Post Stories Gain+Glory</h2>
+              <ul class="server">
+                <li>Ruby on rails</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+              </ul>
+              <button type="button" class="button">See Project</button>
+            </div>
+          </div>
+        </div>
+      </section>
