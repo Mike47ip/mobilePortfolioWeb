@@ -143,7 +143,7 @@ const projectPopupWindow = [
   },
   {
     id: '5',
-    image: '/Images/Snapshoot-Portfolio.png',
+    image: '/Images/SnapshootF-Portfolio.png',
     alt: 'Popup Window Image',
     heading: 'Keeping track of hundreds of components',
     technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'Bootstrap', 'Terminal'],
