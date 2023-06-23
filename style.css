@@ -633,10 +633,6 @@ footer .social {
   cursor: pointer;
 }
 
-.server {
-  padding: 8px, 12px, 8px, 12px;
-}
-
 .buttonDiv {
   padding: 8px;
   background: #36b37f;
@@ -773,11 +769,6 @@ footer .social {
     display: flex;
     flex-direction: column;
   }
-}
-
-.contact {
-  display: flex;
-  justify-content: space-between;
 }
 
 @media screen and (min-width: 1024px) {
