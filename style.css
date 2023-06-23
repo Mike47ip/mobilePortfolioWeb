@@ -74,21 +74,17 @@ footer a {
 }
 
 .Closepop {
-  
-position: relative;
+  position: relative;
   /* position: relative; */
   cursor: pointer;
 
-align-items: end;
-  
+  align-items: end;
+
   left: 95%;
-text-align: end;
+  text-align: end;
   width: auto;
   /* height: 20px; */
 }
-
-
-
 
 .cardWin {
   height: 791px;
@@ -111,18 +107,17 @@ text-align: end;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
   align-items: start;
   background: #fff;
   border-radius: 8px;
   padding: 24px;
   gap: 8px;
-  height: 90%;
+  height: 95%;
   width: 85%;
   overflow-y: scroll;
 }
 
-.titleWin h2 {
+.headingpop {
   color: #172b4d;
   font-family: Inter;
   font-size: 32px;
@@ -175,8 +170,6 @@ text-align: end;
 .buttonPop:active {
   background: #008552;
 }
-
-
 
 main {
   height: auto;
@@ -620,8 +613,7 @@ footer .social {
   padding-top: 0;
 }
 
-@media screen and (max-width: 768px) {
-  /* .mobilepopWindowContainer {
+/* .mobilepopWindowContainer {
     width: 100vw;
     height: auto;
     z-index: 3;
@@ -634,67 +626,67 @@ footer .social {
   }
    */
 
-  .headerSubMenu li {
-    display: none;
-  }
+.headerSubMenu li {
+  display: none;
+}
 
-  .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 24px;
-    background-image: url("./Images/illustration-aboutme-mobile.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  background-image: url("./Images/illustration-aboutme-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 
-  .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  #fname {
-    padding: 10px;
-    width: 327px;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #6b778c;
-  }
+#fname {
+  padding: 10px;
+  width: 327px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
 
-  #email {
-    padding: 10px;
-    width: 327px;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #6b778c;
-  }
+#email {
+  padding: 10px;
+  width: 327px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
 
-  #type {
-    padding: 10px;
-    width: 327px;
-    height: 114px;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #091e42;
-  }
+#type {
+  padding: 10px;
+  width: 327px;
+  height: 114px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+}
 
-  .Secpopupwin {
+/* .Secpopupwin {
     display: none;
     justify-content: center;
     position: fixed;
@@ -705,115 +697,59 @@ footer .social {
     top: 0;
     overflow: scroll;
     padding-top: 15px;
-  }
+  } */
 
-  .Secpopupwin.active {
-    display: flex;
-  }
+.Secpopupwin.active {
+  display: flex;
+}
 
-  .Xpopmenu {
-    float:right;
-cursor: pointer;
+.Xpopmenu {
+  float: right;
+  cursor: pointer;
+}
 
-
-
-  }
-  /* .Closepop {
-    cursor: pointer;
-    opacity: 0;
-    background-color: red;
-    position: absolute;
-    top: 40px;
-    right: 85px;
-    width: 80px;
-    height: 80px;
-    text-align: center;
-  }
 
   .Closepop:hover {
     background-color: blue;
   } */
-  /* .paddinwindow {y
+/* .paddinwindow {y
     background-color: red;
   } */
 
-  .cardWin {
-    height: 791px;
-    width: 80%;
-    border-radius: 18px;
+.cardWin {
+  height: 791px;
+  width: 80%;
+  border-radius: 18px;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 25px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 25px;
+}
 
-  .popupWindowImage {
-    padding-top: 24px;
-    width: 85%;
-  }
+.server {
+  padding: 8px, 12px, 8px, 12px;
+}
 
-  .titleWin {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: center;
-    background: #fff;
-    border-radius: 8px;
-    padding-bottom: 24px;
-    gap: 8px;
-    height: 90%;
-    width: 85%;
-    overflow-x: scroll;
-  }
+.server li {
+  padding: 8px, 12px, 8px, 12px;
+}
 
-  .titleWin h2 {
-    color: #172b4d;
-    font-family: Inter;
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 44px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding-left: 0;
-    padding-top: 10px;
-  }
-
-  .server {
-    padding: 8px, 12px, 8px, 12px;
-  }
-
-  .server li {
-    padding: 8px, 12px, 8px, 12px;
-  }
-
-  .Lorem {
-    font-family: Inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding: 2px 12px 16px 21px;
-  }
-
-  .buttonDiv {
-    padding: 8px;
-    background: #36b37f;
-    border-radius: 4px;
-    border-style: none;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    color: #fff;
-    transition: background-color 0.3s ease, width 2s, height 2s;
-    gap: 60px;
-    width: 150px;
-  }
+.buttonDiv {
+  padding: 8px;
+  background: #36b37f;
+  border-radius: 4px;
+  border-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  transition: background-color 0.3s ease, width 2s, height 2s;
+  gap: 60px;
+  width: 150px;
 }
 
 @media screen and (min-width: 768px) {
