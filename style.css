@@ -113,11 +113,10 @@ footer a {
 
 .headingpop {
   color: #172b4d;
-  font-family: Inter;
+  font-family: "Inter", sans-serif;
   font-size: 32px;
   font-weight: 600;
   line-height: 44px;
-  letter-spacing: 0em;
   text-align: left;
   padding-left: 0;
   padding-top: 10px;
@@ -132,11 +131,10 @@ footer a {
 }
 
 .Lorem {
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0em;
   text-align: left;
   padding: 2px 12px 16px 0;
 }
@@ -164,17 +162,17 @@ footer a {
 .buttonPop:active {
   background: #008552;
 }
-
+f
 .poplinks {
- display:flex;
- flex-direction: row;
- gap: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
 }
 
 #source {
-text-decoration: none;
-text-align: center;
-padding-left: 10px;
+  text-decoration: none;
+  text-align: center;
+  padding-left: 10px;
 }
 
 #live {
