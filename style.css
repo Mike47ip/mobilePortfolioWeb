@@ -78,7 +78,6 @@ footer a {
   cursor: pointer;
   align-items: end;
   left: 95%;
-  text-align: end;
   width: auto;
 }
 
@@ -166,6 +165,24 @@ footer a {
   background: #008552;
 }
 
+.poplinks {
+ display:flex;
+ flex-direction: row;
+ gap: 10px;
+}
+
+#source {
+text-decoration: none;
+text-align: center;
+padding-left: 10px;
+}
+
+#live {
+  text-decoration: none;
+  text-align: center;
+  padding-left: 10px;
+}
+
 main {
   height: auto;
   overflow-x: hidden;
@@ -247,40 +264,7 @@ p {
 }
 
 .headerSubMenu {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: auto auto auto;
-  gap: 20px;
-  position: relative;
-  margin-top: -20px;
-  cursor: pointer;
-}
-
-.headerSubMenu li {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
-  list-style: none;
-  padding: 5px 7px;
-  border-radius: 0.3rem;
-  transition: background-color 0.3s ease;
-}
-
-.headerSubMenu li a {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
-  list-style: none;
-  padding: 5px 7px;
-  border-radius: 0.3rem;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
+  display: none;
 }
 
 .works li {
@@ -370,11 +354,6 @@ p {
 
 .nav-links li a:hover {
   color: blue;
-}
-
-.headerSubMenu li a:hover {
-  background-color: #313741;
-  color: white;
 }
 
 .projects {
@@ -603,10 +582,6 @@ footer .social {
   padding-top: 0;
 }
 
-.headerSubMenu li {
-  display: none;
-}
-
 .about {
   display: flex;
   flex-direction: column;
@@ -672,10 +647,6 @@ footer .social {
   cursor: pointer;
 }
 
-.Closepop:hover {
-  background-color: blue;
-}
-
 .cardWin {
   height: 791px;
   width: 80%;
@@ -717,6 +688,48 @@ footer .social {
     background-size: cover;
     background-repeat: no-repeat;
     height: 850px;
+  }
+
+  .headerSubMenu {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    position: relative;
+    margin-top: -20px;
+    cursor: pointer;
+  }
+
+  .headerSubMenu li {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #3a4a42;
+    list-style: none;
+    padding: 5px 7px;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .headerSubMenu li a {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #3a4a42;
+    list-style: none;
+    padding: 5px 7px;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .headerSubMenu li a:hover {
+    background-color: #313741;
+    color: white;
   }
 
   .Secpopupwin.active {
