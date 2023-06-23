@@ -85,3 +85,21 @@
           </div>
         </div>
       </section>
+
+
+
+
+
+
+
+
+      document.querySelectorAll('.button').forEach((n) => n.addEventListener('click', () => {
+        secpop.classList.toggle('active');
+        console.log('clicked');
+        
+        }));
+        
+        
+        closepop.addEventListener('click', () => {
+          secpop.style.display ='none';
+        });

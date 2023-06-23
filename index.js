@@ -88,7 +88,7 @@ projectsMobile.forEach((mobileProjects) => {
 
   cardyC.appendChild(tech);
   const btn = document.createElement("button");
-  btn.classList.add("button");
+  btn.classList.add("button1");
   btn.innerHTML = mobileProjects.button;
 
   cardyC.appendChild(btn);
@@ -96,47 +96,26 @@ projectsMobile.forEach((mobileProjects) => {
   projects.appendChild(cardyB);
 });
 
+const openpop = document.querySelectorAll(".button1");
+const secpop = document.querySelector(".Secpopupwin");
+const closepop = document.querySelector(".Closepop");
+
+const openpopwin = () => {
+  secpop.classList.add("active");
+};
+
+const closepopwin = () => {
+  secpop.classList.remove("active");
+};
+
+closepop.addEventListener("click", closepopwin);
+
+openpop.forEach((windowpop) => {
+  windowpop.addEventListener("click", () => {
+    openpopwin();
+
+    
+  });
+});
 
 
-const body = document.querySelector('body');
-const section = document.createElement('section');
-body.appendChild(section);
-
-
-// const popupsec = document.querySelector('.Secpopupwin');
-// section.innerHTML = `<section class="Secpopupwin">
-// <div class="containerWin">
-//   <div id="popupWindow" class="cardWin">
-//     <div id="paddinwindow" class="titleWin">
-//       <img
-//         class="popupWindowImage"
-//         src="/Images/Mobile-popup-Portfolio.JPG"
-//         alt="Popup Window Image"
-//       />
-//       <h2>Keeping track of hundreds of components</h2>
-//       <div class="serverdiv">
-//         <ul id="serverWin" class="server">
-//           <li>Ruby on Rails</li>
-//           <li>CSS</li>
-//           <li>JavaScript</li>
-//         </ul>
-//       </div>
-//       <p class="Lorem">
-//         Lorem Ipsum is simply dummy text of the printing and typesetting
-//         industry. Lorem Ipsum has been the industry's standard dummy
-//         text ever since the 1500s, when an unknown printer took a galley
-//         of type and scrambled it 1960s. <br />
-//         <br />
-//         Lorem Ipsum is simply dummy text of the printing and typesetting
-//         industry. Lorem Ipsum has been the industry's standard dummy
-//         text ever since the 1500s, when an unknown printer took a galley
-//         of type and scrambled it 1960s.
-//       </p>
-//       <div class="buttonDiv">
-//         <button class="button" type="button">See live</button>
-//         <button class="button" type="button">See source</button>
-//       </div>
-//     </div>
-//   </div>
-// </div>
-// </section>`;

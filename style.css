@@ -57,22 +57,126 @@ footer a {
 }
 
 .Secpopupwin {
-  /* display:none; */
-  position: absolute;
-}
-/* .vector.active {
-position:fixed;
-} */
-
-/* .vector span {
   display: none;
-  width: 100%;
-  border: 1px solid #28352f;
-} */
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 68%);
+  z-index: 10;
+  top: 0;
+  overflow: scroll;
+  padding-top: 15px;
+}
 
-/* .vector span:nth-child(2) {
-  margin: 2px 0;
-} */
+.Secpopupwin.active {
+  display: flex;
+}
+
+.Closepop {
+  
+position: relative;
+  /* position: relative; */
+  cursor: pointer;
+
+align-items: end;
+  
+  left: 95%;
+text-align: end;
+  width: auto;
+  /* height: 20px; */
+}
+
+
+
+
+.cardWin {
+  height: 791px;
+  width: 80%;
+  border-radius: 18px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 25px;
+}
+
+.popupWindowImage {
+  padding-top: 24px;
+  width: 100%;
+}
+
+.titleWin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  align-items: start;
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  gap: 8px;
+  height: 90%;
+  width: 85%;
+  overflow-y: scroll;
+}
+
+.titleWin h2 {
+  color: #172b4d;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 0;
+  padding-top: 10px;
+}
+
+.server {
+  padding: 8px, 12px, 8px, 12px;
+}
+
+.server li {
+  padding: 8px, 12px, 8px, 12px;
+}
+
+.Lorem {
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding: 2px 12px 16px 0;
+}
+
+.buttonPop {
+  padding: 8px;
+  background: #36b37f;
+  border-radius: 4px;
+  border-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  transition: background-color 0.3s ease, width 2s, height 2s;
+  gap: 60px;
+  width: 150px;
+}
+
+.buttonPop:hover {
+  background: #4ada9e;
+}
+
+.buttonPop:active {
+  background: #008552;
+}
+
+
 
 main {
   height: auto;
@@ -352,6 +456,28 @@ left:0;
   background-color: #5ddfa9;
 }
 
+.button1 {
+  padding: 8px;
+  background: #36b37f;
+  border-radius: 4px;
+  border-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  transition: background-color 0.3s ease, width 2s, height 2s;
+}
+
+.button1:hover {
+  background: #4ada9e;
+}
+
+.button1:active {
+  background: #008552;
+}
+
 .button {
   padding: 8px;
   background: #36b37f;
@@ -567,32 +693,55 @@ footer .social {
     line-height: 24px;
     color: #091e42;
   }
+
   .Secpopupwin {
-    /* display:none; */
-    display:flex;
+    display: none;
     justify-content: center;
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color:rgb(0,0,0,68%);
+    background-color: rgb(0, 0, 0, 68%);
     z-index: 10;
-    top:0;
+    top: 0;
     overflow: scroll;
     padding-top: 15px;
-    padding-left: 60px;
   }
 
+  .Secpopupwin.active {
+    display: flex;
+  }
+
+  .Xpopmenu {
+    float:right;
+cursor: pointer;
+
+
+
+  }
+  /* .Closepop {
+    cursor: pointer;
+    opacity: 0;
+    background-color: red;
+    position: absolute;
+    top: 40px;
+    right: 85px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+  }
+
+  .Closepop:hover {
+    background-color: blue;
+  } */
   /* .paddinwindow {y
     background-color: red;
   } */
-
-
 
   .cardWin {
     height: 791px;
     width: 80%;
     border-radius: 18px;
-  
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -615,6 +764,9 @@ footer .social {
     border-radius: 8px;
     padding-bottom: 24px;
     gap: 8px;
+    height: 90%;
+    width: 85%;
+    overflow-x: scroll;
   }
 
   .titleWin h2 {
@@ -625,7 +777,7 @@ footer .social {
     line-height: 44px;
     letter-spacing: 0em;
     text-align: left;
-    padding-left: 24px;
+    padding-left: 0;
     padding-top: 10px;
   }
 
@@ -648,9 +800,19 @@ footer .social {
   }
 
   .buttonDiv {
-  display: flex;
-  flex-direction: row;  
-  gap: 10px;
+    padding: 8px;
+    background: #36b37f;
+    border-radius: 4px;
+    border-style: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    color: #fff;
+    transition: background-color 0.3s ease, width 2s, height 2s;
+    gap: 60px;
+    width: 150px;
   }
 }
 
@@ -660,6 +822,10 @@ footer .social {
     background-size: cover;
     background-repeat: no-repeat;
     height: 850px;
+  }
+
+  .Secpopupwin.active {
+    display: flex;
   }
 
   .header {
