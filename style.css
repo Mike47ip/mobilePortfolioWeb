@@ -122,14 +122,6 @@ footer a {
   padding-top: 10px;
 }
 
-.server {
-  padding: 8px, 12px, 8px, 12px;
-}
-
-.server li {
-  padding: 8px, 12px, 8px, 12px;
-}
-
 .Lorem {
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -162,7 +154,7 @@ footer a {
 .buttonPop:active {
   background: #008552;
 }
-f
+
 .poplinks {
   display: flex;
   flex-direction: row;
@@ -284,20 +276,6 @@ p {
   transition: all 0.3s ease;
 }
 
-.server li {
-  padding: 5px 6px;
-  background: #ebf0ee;
-  border-radius: 4px;
-  list-style: none;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
-  transition: background-color 0.5s ease;
-}
-
 .Popwrapper {
   left: 100%;
   position: fixed;
@@ -326,6 +304,20 @@ p {
 
 .PopupMenu ul {
   padding: 108px 0;
+}
+
+.server li {
+  padding: 5px 6px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  transition: background-color 0.5s ease;
 }
 
 .PopupMenu ul li {
@@ -636,31 +628,12 @@ footer .social {
   color: #091e42;
 }
 
-.Secpopupwin.active {
-  display: flex;
-}
-
 .Xpopmenu {
   float: right;
   cursor: pointer;
 }
 
-.cardWin {
-  height: 791px;
-  width: 80%;
-  border-radius: 18px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 25px;
-}
-
 .server {
-  padding: 8px, 12px, 8px, 12px;
-}
-
-.server li {
   padding: 8px, 12px, 8px, 12px;
 }
 
@@ -805,46 +778,6 @@ footer .social {
 .contact {
   display: flex;
   justify-content: space-between;
-}
-
-#fname {
-  padding: 10px;
-  width: 400px;
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #6b778c;
-}
-
-#email {
-  padding: 10px;
-  width: 400px;
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #6b778c;
-}
-
-#type {
-  padding: 10px;
-  width: 400px;
-  height: 114px;
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #091e42;
 }
 
 @media screen and (min-width: 1024px) {
