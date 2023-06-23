@@ -146,7 +146,7 @@ const projectPopupWindow = [
     image: '/Images/Snapshoot-Portfolio.png',
     alt: 'Popup Window Image',
     heading: 'Keeping track of hundreds of components',
-    technologies: ['Ruby on Rails', 'CSS', 'JavaScript'],
+    technologies: ['Ruby on Rails', 'CSS', 'JavaScript', 'Bootstrap', 'Terminal'],
     paragraph:
       'Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesettin industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.',
     button1: 'https://github.com/Mike47ip/mobilePortfolioWeb',
