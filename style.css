@@ -75,22 +75,17 @@ footer a {
 
 .Closepop {
   position: relative;
-  /* position: relative; */
   cursor: pointer;
-
   align-items: end;
-
   left: 95%;
   text-align: end;
   width: auto;
-  /* height: 20px; */
 }
 
 .cardWin {
   height: 791px;
   width: 80%;
   border-radius: 18px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -322,16 +317,11 @@ p {
 }
 
 .Popwrapper {
-  /* display:none; */
   left: 100%;
   position: fixed;
   z-index: 2;
   box-sizing: border-box;
 }
-
-/* .Popwrapper.active {
-left:0;
-}  */
 
 .Xmenu {
   cursor: pointer;
@@ -613,19 +603,6 @@ footer .social {
   padding-top: 0;
 }
 
-/* .mobilepopWindowContainer {
-    width: 100vw;
-    height: auto;
-    z-index: 3;
-    display: none;
-  }
-  
-  .mobilepopupWindow {
-    position: absolute;
-    background-color: #008552;
-  }
-   */
-
 .headerSubMenu li {
   display: none;
 }
@@ -686,19 +663,6 @@ footer .social {
   color: #091e42;
 }
 
-/* .Secpopupwin {
-    display: none;
-    justify-content: center;
-    position: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(0, 0, 0, 68%);
-    z-index: 10;
-    top: 0;
-    overflow: scroll;
-    padding-top: 15px;
-  } */
-
 .Secpopupwin.active {
   display: flex;
 }
@@ -711,16 +675,11 @@ footer .social {
 .Closepop:hover {
   background-color: blue;
 }
-*/
-/* .paddinwindow {y
-    background-color: red;
-  } */
 
 .cardWin {
   height: 791px;
   width: 80%;
   border-radius: 18px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
