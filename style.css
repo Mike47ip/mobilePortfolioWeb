@@ -128,10 +128,11 @@ footer a {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  padding: 2px 12px 16px 0;
+  padding: 15px 12px 16px 0;
 }
 
 .buttonPop {
+  text-align: center;
   padding: 8px;
   background: #36b37f;
   border-radius: 4px;
@@ -157,8 +158,37 @@ footer a {
 
 .poplinks {
   display: flex;
-  flex-direction: row;
   gap: 10px;
+}
+
+.newpoplinks {
+  display: flex;
+  gap: 10px;
+}
+
+.newbuttonPop {
+  text-align: center;
+  padding: 8px;
+  background: #36b37f;
+  border-radius: 4px;
+  border-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  transition: background-color 0.3s ease, width 2s, height 2s;
+  gap: 60px;
+  width: 150px;
+}
+
+.newbuttonPop:hover {
+  background: #4ada9e;
+}
+
+.newbuttonPop:active {
+  background: #008552;
 }
 
 #source {
@@ -398,10 +428,9 @@ p {
 
 .server {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
   gap: 8px;
+  margin-top: 10px;
 }
 
 .server :hover {
@@ -649,12 +678,47 @@ footer .social {
   width: 150px;
 }
 
+@media screen and (max-width: 640px) {
+  .poplinks {
+    top: 125%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .poplinks {
+    display: none;
+    position: absolute;
+    top: 89%;
+    right: 20%;
+    height: 55px;
+    text-align: center;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .porfolio {
     background-image: url("./Images/header-llustration-desktop.png");
     background-size: cover;
     background-repeat: no-repeat;
     height: 850px;
+  }
+
+  .poplinks {
+    display: flex;
+    gap: 12px;
+  }
+
+  .buttonPop {
+    height: 45px;
+  }
+
+  .newbuttonPop {
+    display: none;
+  }
+
+  .modal-body {
+    display: flex;
+    gap: 100px;
   }
 
   .headerSubMenu {
