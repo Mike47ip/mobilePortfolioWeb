@@ -124,7 +124,7 @@ footer a {
 
 .Lorem {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 24px;
   text-align: left;
@@ -684,6 +684,14 @@ footer .social {
   width: 150px;
 }
 
+@media screen and (max-width: 426px) {
+  .newpoplinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
 @media screen and (max-width: 640px) {
   .poplinks {
     top: 125%;
@@ -707,6 +715,11 @@ footer .social {
     background-size: cover;
     background-repeat: no-repeat;
     height: 850px;
+  }
+
+  .modal-body {
+    display: flex;
+    gap: 100px;
   }
 
   .poplinks {
@@ -863,5 +876,10 @@ footer .social {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+  }
+
+  .modal-body {
+    display: flex;
+    gap: 200px;
   }
 }
