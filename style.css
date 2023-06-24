@@ -735,11 +735,6 @@ footer .social {
     display: none;
   }
 
-  .modal-body {
-    display: flex;
-    gap: 100px;
-  }
-
   .headerSubMenu {
     display: grid;
     justify-content: center;
