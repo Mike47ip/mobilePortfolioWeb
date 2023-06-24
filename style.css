@@ -657,6 +657,12 @@ footer .social {
   color: #091e42;
 }
 
+.display-error {
+  font-size: 15px !important;
+  color: red;
+  padding: 0;
+}
+
 .Xpopmenu {
   float: right;
   cursor: pointer;

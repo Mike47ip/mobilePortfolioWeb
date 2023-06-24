@@ -226,7 +226,7 @@ formValidation.addEventListener('submit', (event) => {
     error.innerHTML = '';
     formValidation.submit();
   } else {
-    error.style.color = 'blue';
+    error.style.color = 'red';
     error.innerHTML = 'Please Email should be in lowercase';
   }
 });
