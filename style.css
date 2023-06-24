@@ -79,6 +79,7 @@ footer a {
   align-items: end;
   left: 95%;
   width: auto;
+  padding-bottom: 0;
 }
 
 .cardWin {
