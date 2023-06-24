@@ -246,6 +246,6 @@ form.addEventListener('submit', (event) => {
 const savedDate = JSON.parse(localStorage.getItem('Collected-Data'));
 window.onload = () => {
   document.getElementById('email').value = savedDate.email;
-  document.getElementById('text').value = savedDate.name;
-  document.getElementById('textaera').value = savedDate.message;
+  document.getElementById('fname').value = savedDate.name;
+  document.getElementById('type').value = savedDate.message;
 };
