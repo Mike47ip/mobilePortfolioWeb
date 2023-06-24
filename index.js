@@ -230,3 +230,22 @@ formValidation.addEventListener('submit', (event) => {
     error.innerHTML = 'Please Email should be in lowercase';
   }
 });
+
+const form = document.getElementById('form');
+let collectedInputData;
+form.addEventListener('submit', (event) => {
+  const formInputData = new FormData(event.target);
+  collectedInputData = {};
+  formInputData.forEach((value, key) => {
+    collectedInputData[key] = value;
+  });
+  const formData = JSON.stringify(collectedInputData);
+  localStorage.setItem('Collected-Data', formData);
+});
+
+const savedDate = JSON.parse(localStorage.getItem('Collected-Data'));
+window.onload = () => {
+  document.getElementById('email').value = savedDate.email;
+  document.getElementById('text').value = savedDate.name;
+  document.getElementById('textaera').value = savedDate.message;
+};
