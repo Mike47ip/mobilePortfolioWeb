@@ -133,9 +133,9 @@ footer a {
 
 .buttonPop {
   text-align: center;
-  padding: 8px;
+  padding: 8px 5px 8px 5px;
   background: #36b37f;
-  border-radius: 4px;
+  border-radius: 10px;
   border-style: none;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -145,7 +145,7 @@ footer a {
   color: #fff;
   transition: background-color 0.3s ease, width 2s, height 2s;
   gap: 60px;
-  width: 150px;
+  width: 140px;
 }
 
 .buttonPop:hover {
@@ -168,9 +168,9 @@ footer a {
 
 .newbuttonPop {
   text-align: center;
-  padding: 8px;
+  padding: 8px 5px 8px 5px;
   background: #36b37f;
-  border-radius: 4px;
+  border-radius: 10px;
   border-style: none;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -180,7 +180,7 @@ footer a {
   color: #fff;
   transition: background-color 0.3s ease, width 2s, height 2s;
   gap: 60px;
-  width: 150px;
+  width: 140px;
 }
 
 .newbuttonPop:hover {
@@ -693,11 +693,32 @@ footer .social {
     display: flex;
     gap: 3.5px;
   }
+
+  .newbuttonPop {
+    width: 110px;
+    padding:8px 2px 8px 2px;
+    font-size:15px;
+  }
+
+  #live {
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 315px) {
+  #live {
+    width: 110px;
+  }
 }
 
 @media screen and (max-width: 426px) {
   .newbuttonPop {
     width: 130px;
+    font-size:15px;
+  }
+
+  #live {
+    width: 110px;
   }
 }
 

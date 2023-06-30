@@ -3,7 +3,6 @@ const popwrap = document.querySelector('.Popwrapper');
 const xmenu = document.querySelector('.Xmenu');
 
 vector.addEventListener('click', () => {
-  // vector.style.display = "none";
   popwrap.style.left = '0';
 });
 
