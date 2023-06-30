@@ -56,20 +56,6 @@ footer a {
   font-size: 30px;
 }
 
-/* .vector.active {
-position:fixed;
-} */
-
-/* .vector span {
-  display: none;
-  width: 100%;
-  border: 1px solid #28352f;
-} */
-
-/* .vector span:nth-child(2) {
-  margin: 2px 0;
-} */
-
 main {
   height: auto;
   overflow-x: hidden;
@@ -228,10 +214,6 @@ p {
   box-sizing: border-box;
 }
 
-/* .Popwrapper.active {
-left:0;
-}  */
-
 .Xmenu {
   cursor: pointer;
   float: right;
@@ -267,8 +249,8 @@ left:0;
   cursor: pointer;
 }
 
-.menu_items{
-  cursor:pointer;
+.menu_items {
+  cursor: pointer;
   transition: color orange 1.5s ease-in-out;
 }
 
