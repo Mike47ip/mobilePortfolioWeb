@@ -481,7 +481,7 @@ p {
   background: #008552;
 }
 
-.about>h2 {
+.about > h2 {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -490,7 +490,7 @@ p {
   color: #172b4d;
 }
 
-.about>p {
+.about > p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
