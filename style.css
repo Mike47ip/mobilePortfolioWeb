@@ -696,8 +696,8 @@ footer .social {
 
   .newbuttonPop {
     width: 110px;
-    padding:8px 2px 8px 2px;
-    font-size:15px;
+    padding: 8px 2px 8px 2px;
+    font-size: 15px;
   }
 
   #live {
@@ -714,7 +714,7 @@ footer .social {
 @media screen and (max-width: 426px) {
   .newbuttonPop {
     width: 130px;
-    font-size:15px;
+    font-size: 15px;
   }
 
   #live {
