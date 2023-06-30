@@ -103,3 +103,70 @@
         closepop.addEventListener('click', () => {
           secpop.style.display ='none';
         });
+
+
+
+
+
+
+
+
+        <!DOCTYPE html>
+<html>
+<head>
+  <title>Form Input Persistence</title>
+</head>
+<body>
+  <form id="myForm">
+    <input type="text" id="myInput" />
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    // Retrieve the form element and input element
+    const form = document.getElementById('myForm');
+    const input = document.getElementById('myInput');
+
+    // Add an event listener to the form submission
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // Prevent form submission
+
+      // Store the input value in localStorage
+      localStorage.setItem('myInputValue', input.value);
+      
+      // Reset the form
+      form.reset();
+    });
+
+    // Check if the input value is stored in localStorage
+    if (localStorage.getItem('myInputValue')) {
+      // Set the input value from localStorage
+      input.value = localStorage.getItem('myInputValue');
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+const form = document.querySelector('form');
+let collectedInputData;
+form.addEventListener('submit', (event) => {
+  const formInputData = new FormData(event.target);
+  collectedInputData = {};
+  formInputData.forEach((value, key) => {
+    collectedInputData[key] = value;
+  });
+  const formData = JSON.stringify(collectedInputData);
+  localStorage.setItem('Collected-Data', formData);
+});
+
+const savedDate = JSON.parse(localStorage.getItem('Collected-Data'));
+window.onload = () => {
+  document.querySelector('email').value = savedDate.email;
+  document.querySelector('fname').value = savedDate.name;
+  document.querySelector('type').value = savedDate.message;
+};
