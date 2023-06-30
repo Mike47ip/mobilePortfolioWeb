@@ -884,7 +884,7 @@ footer .social {
     height: 474px;
     width: 250px;
     border: 1px solid #d0d9d4;
-    border-radius: 8px;
+    border-radius: 5px;
     background: #ebf0ee;
     display: flex;
     flex-direction: column;
