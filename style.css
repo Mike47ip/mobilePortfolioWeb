@@ -81,7 +81,6 @@ footer a {
   padding-bottom: 0;
 }
 
-
 .cardWin {
   height: 791px;
   width: 80%;
@@ -482,7 +481,7 @@ p {
   background: #008552;
 }
 
-.about > h2 {
+.about>h2 {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -491,7 +490,7 @@ p {
   color: #172b4d;
 }
 
-.about > p {
+.about>p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -685,28 +684,26 @@ footer .social {
   width: 150px;
 }
 
-
-
 @media screen and (max-width: 354px) {
-   .titleWin {
-  padding: 4px;
- }
+  .titleWin {
+    padding: 4px;
+  }
 
- .newpoplinks {
-  display: flex;
-  gap: 3.5px;
-}
+  .newpoplinks {
+    display: flex;
+    gap: 3.5px;
+  }
 }
 
 @media screen and (max-width: 426px) {
- .newbuttonPop{
-  width: 130px;
- }
+  .newbuttonPop {
+    width: 130px;
+  }
 }
 
-@media screen and (max-width: 530px ) {
+@media screen and (max-width: 530px) {
   img.Closepop {
-    left:80%;
+    left: 80%;
     width: 30px;
     height: auto;
   }
@@ -732,13 +729,12 @@ footer .social {
     padding-top: 0;
     margin-top: -40px;
   }
-  
-  .Closepop {
-    left:89%;
-    top:5%;
-  }  
-}
 
+  .Closepop {
+    left: 89%;
+    top: 5%;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .porfolio {
@@ -751,18 +747,18 @@ footer .social {
   .popupWindowImage {
     padding-top: 0;
     width: 100%;
-    margin-top:-1.2%;
+    margin-top: -1.2%;
   }
 
   .Closepop {
     cursor: pointer;
     align-items: end;
     left: 95%;
-    top:-3%;
+    top: -3%;
     width: auto;
     padding-bottom: 0;
   }
-  
+
   .modal-body {
     display: flex;
     gap: 100px;
