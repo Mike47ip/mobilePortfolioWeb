@@ -480,7 +480,7 @@ p {
   background: #008552;
 }
 
-.about>h2 {
+.about > h2 {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -489,7 +489,7 @@ p {
   color: #172b4d;
 }
 
-.about>p {
+.about > p {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -698,9 +698,6 @@ footer .social {
     padding: 8px 2px 8px 2px;
     font-size: 15px;
   }
-}
-
-@media screen and (max-width: 315px) {
 }
 
 @media screen and (max-width: 426px) {
