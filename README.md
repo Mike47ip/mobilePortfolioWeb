@@ -1,3 +1,5 @@
+<a name="Michael's README File"></a>
+
 <div align="center">
 
   <h1><b>Portfolio</b></h1>
@@ -57,6 +59,13 @@
     <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
+
+### Key Features <a name="key-features"></a>
+
+>
+- **Added Project details** [Details of the projects I have done are included] 
+- **Styled using flex and grid** [This page is styled using css flexbox and grid]
+- **HTML AND CSS best syntax practises** [Professional HTML AND CSS best use of syntax was implemented to make my codes clean and easy to read]
 
 
 <!-- GETTING STARTED -->
@@ -144,7 +153,8 @@ I would like to thank all Micronauts for their support
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/Mike47ip/mobilePortfolioWeb/blob/toolbar-headline-section/MIT.md) licensed.
+This project is [MIT]
+
 <!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
