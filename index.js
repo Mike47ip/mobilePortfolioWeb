@@ -230,28 +230,26 @@ formValidation.addEventListener('submit', (event) => {
   }
 });
 
-// Retrieve the form element and input element
 const form = document.getElementById('myForm');
 const input = document.getElementById('fname');
 const email = document.getElementById('email');
 const textArea = document.getElementById('type');
 
-// Add an event listener to the form submission
-form.addEventListener('submit', (e) => {
-  e.preventDefault(); // Prevent form submission
+form.addEventListener('input', (e) => {
+  e.preventDefault();
 
-  // Store the input value in localStorage
-  localStorage.setItem('myInputValue', input.value);
-  localStorage.setItem('hell', email.value);
-  localStorage.setItem('heaven', textArea.value);
-  // Reset the form
-  form.reset();
+  const formData = {
+    name: input.value,
+    mail: email.value,
+    body: textArea.value,
+
+  };
+  localStorage.setItem('form', JSON.stringify(formData));
 });
 
-// Check if the input value is stored in localStorage
-if (localStorage.getItem('myInputValue')) {
-  // Set the input value from localStorage
-  input.value = localStorage.getItem('myInputValue');
-  email.value = localStorage.getItem('hell');
-  textArea.value = localStorage.getItem('heaven');
+if (localStorage.getItem('form')) {
+  const { name, mail, body } = JSON.parse(localStorage.getItem('form'));
+  input.value = name;
+  email.value = mail;
+  textArea.value = body;
 }
