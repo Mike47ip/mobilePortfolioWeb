@@ -722,7 +722,7 @@ footer .social {
 
 @media screen and (max-width: 768px) {
   .poplinks {
-    display:none;
+    display: none;
     top: 89%;
     right: 20%;
     height: 55px;
