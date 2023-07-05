@@ -25,8 +25,8 @@
             </div>
             <ul class="nav-links">
               <li><a href="#Projects" class="menu_items">Portfolio</a></li>
-              <li><a href="#About"  class="menu_items">About</a></li>
-              <li><a href="#Contact" class="menu_items" >Contact</a></li>
+              <li><a href="#About" class="menu_items">About</a></li>
+              <li><a href="#Contact" class="menu_items">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -87,83 +87,36 @@
 
         <div class="span"></div>
 
-        <div class="container">
-          <div class="card">
-            <div class="title">
-              <h2 class="text">Multi-Post Stories Gain+Glory</h2>
-              <ul class="server">
-                <li>Ruby on rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button type="button" class="button">See Project</button>
-            </div>
-          </div>
+        <div class="container"></div>
+      </section>
 
-          <div class="card">
-            <div class="title">
-              <h2 class="text">Multi-Post Stories Gain+Glory</h2>
-              <ul class="server">
-                <li>Ruby on rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button type="button" class="button">See Project</button>
+      <!---POPUPWINDOW-->
+      <section class="Secpopupwin">
+        <div id="paddinwindow" class="titleWin">
+          <img class="Closepop" src="/Images/WindowDisabled.png" alt="X button" />
+          <img class="popupWindowImage" src="" alt="Popup Window Image" />
+          <div class="modal-content">
+            <div class="modal-body">
+              <h2 class="headingpop"></h2>
+              <div class="poplinks">
+                <a id="live" class="buttonPop" href="#">
+                  See live &nbsp; <img id="butimg" src="Images/Icon.png" alt=""></ion-icon>
+                </a>
+                <a id="source" class="buttonPop" href="#">
+                  See source &nbsp; <img src="Images/github.png" alt="">
+                </a>
+              </div>
             </div>
+            <ul id="serverWin" class="server"></ul>
+            <p class="Lorem"></p>
           </div>
-
-          <div class="card">
-            <div class="title">
-              <h2 class="text">Multi-Post Stories Gain+Glory</h2>
-              <ul class="server">
-                <li>Ruby on rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button type="button" class="button">See Project</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="title">
-              <h2 class="text">Multi-Post Stories Gain+Glory</h2>
-              <ul class="server">
-                <li>Ruby on rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button type="button" class="button">See Project</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="title">
-              <h2 class="text">Multi-Post Stories Gain+Glory</h2>
-              <ul class="server">
-                <li>Ruby on rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button type="button" class="button">See Project</button>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="title">
-              <h2 class="text">Multi-Post Stories Gain+Glory</h2>
-              <ul class="server">
-                <li>Ruby on rails</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-              </ul>
-              <button type="button" class="button">See Project</button>
-            </div>
+          <div class="newpoplinks">
+            <a id="live" class="newbuttonPop" href="#">
+              See live &nbsp;<img src="Images/Icon.png" alt=""></ion-icon>
+            </a>
+            <a id="source" class="newbuttonPop" href="#">
+              See source &nbsp; <img src="Images/github.png" alt=""></ion-icon>
+            </a>
           </div>
         </div>
       </section>
@@ -234,7 +187,7 @@
           to chat please get in touch.
         </p>
 
-        <form
+        <form id="myForm"
           class="FormFlex"
           action="https://formspree.io/f/mzbwnlbg"
           method="post"
@@ -266,8 +219,10 @@
             required
           ></textarea>
           <br />
+          <p class="display-error" id="display-error"></p>
           <input type="submit" value="Get in touch" class="button" />
         </form>
+        
       </section>
     </main>
 
