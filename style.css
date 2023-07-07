@@ -512,8 +512,8 @@ p {
 }
 
 .works {
-  width: 250px;
-  height: 352px;
+  width: 251px;
+  height: 351px;
   background: #ebf0ee;
   border: 1px solid #c1c7d0;
   border-radius: 8px;
@@ -893,15 +893,15 @@ footer .social {
 
 @media screen and (min-width: 1024px) {
   #fname {
-    width: 530px;
+    width: 531px;
   }
 
   #email {
-    width: 530px;
+    width: 531px;
   }
 
   #type {
-    width: 530px;
+    width: 531px;
   }
 
   .card {
