@@ -56,6 +56,152 @@ footer a {
   font-size: 30px;
 }
 
+.Secpopupwin {
+  display: none;
+  justify-content: center;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 68%);
+  z-index: 10;
+  top: 0;
+  overflow: scroll;
+  padding-top: 15px;
+}
+
+.Secpopupwin.active {
+  display: flex;
+}
+
+.Closepop {
+  position: relative;
+  cursor: pointer;
+  align-items: end;
+  width: auto;
+  padding-bottom: 0;
+}
+
+.cardWin {
+  height: 791px;
+  width: 80%;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 25px;
+}
+
+.popupWindowImage {
+  padding-top: 24px;
+  width: 100%;
+}
+
+.titleWin {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px 16px;
+  gap: 8px;
+  overflow-y: scroll;
+}
+
+.headingpop {
+  color: #172b4d;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: left;
+  padding-left: 0;
+  padding-top: 10px;
+}
+
+.Lorem {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  padding: 15px 12px 16px 0;
+}
+
+.buttonPop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-direction: row;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  padding: 12px 16px;
+  background: #36b37f;
+  border-radius: 4px;
+  border-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  transition: background-color 0.3s ease, width 2s, height 2s;
+  letter-spacing: 0.51px;
+  text-decoration: none;
+}
+
+.buttonPop:hover {
+  background: #4ada9e;
+}
+
+.buttonPop:active {
+  background: #008552;
+}
+
+.poplinks {
+  display: flex;
+  gap: 10px;
+}
+
+.newpoplinks {
+  display: flex;
+  gap: 10px;
+}
+
+.newbuttonPop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-direction: row;
+  height: fit-content;
+  width: fit-content;
+  text-align: center;
+  padding: 12px 16px;
+  background: #36b37f;
+  border-radius: 4px;
+  border-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  transition: background-color 0.3s ease, width 2s, height 2s;
+  letter-spacing: 0.51px;
+  text-decoration: none;
+}
+
+.newbuttonPop:hover {
+  background: #4ada9e;
+}
+
+.newbuttonPop:active {
+  background: #008552;
+}
+
 main {
   height: auto;
   overflow-x: hidden;
@@ -137,40 +283,7 @@ p {
 }
 
 .headerSubMenu {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: auto auto auto;
-  gap: 20px;
-  position: relative;
-  margin-top: -20px;
-  cursor: pointer;
-}
-
-.headerSubMenu li {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
-  list-style: none;
-  padding: 5px 7px;
-  border-radius: 0.3rem;
-  transition: background-color 0.3s ease;
-}
-
-.headerSubMenu li a {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
-  list-style: none;
-  padding: 5px 7px;
-  border-radius: 0.3rem;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
+  display: none;
 }
 
 .works li {
@@ -192,22 +305,7 @@ p {
   transition: all 0.3s ease;
 }
 
-.server li {
-  padding: 5px 6px;
-  background: #ebf0ee;
-  border-radius: 4px;
-  list-style: none;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  color: #3a4a42;
-  transition: background-color 0.5s ease;
-}
-
 .Popwrapper {
-  /* display:none; */
   left: 100%;
   position: fixed;
   z-index: 2;
@@ -237,6 +335,20 @@ p {
   padding: 108px 0;
 }
 
+.server li {
+  padding: 5px 6px;
+  background: #ebf0ee;
+  border-radius: 4px;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3a4a42;
+  transition: background-color 0.5s ease;
+}
+
 .PopupMenu ul li {
   list-style: none;
   font-family: "Inter", sans-serif;
@@ -259,9 +371,8 @@ p {
   color: #3a4a42;
 }
 
-.headerSubMenu li a:hover {
-  background-color: #313741;
-  color: white;
+.nav-links li a:hover {
+  color: blue;
 }
 
 .projects {
@@ -316,14 +427,35 @@ p {
 
 .server {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
-  padding: 0;
   gap: 8px;
+  margin-top: 10px;
 }
 
 .server :hover {
   background-color: #5ddfa9;
+}
+
+.button1 {
+  padding: 8px;
+  background: #36b37f;
+  border-radius: 4px;
+  border-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  transition: background-color 0.3s ease, width 2s, height 2s;
+}
+
+.button1:hover {
+  background: #4ada9e;
+}
+
+.button1:active {
+  background: #008552;
 }
 
 .button {
@@ -342,8 +474,6 @@ p {
 
 .button:hover {
   background: #4ada9e;
-  width: 120px;
-  height: auto;
 }
 
 .button:active {
@@ -470,65 +600,142 @@ footer .social {
   padding-top: 0;
 }
 
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 24px;
+  background-image: url("./Images/illustration-aboutme-mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#fname {
+  padding: 10px;
+  width: 327px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+#email {
+  padding: 10px;
+  width: 327px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #6b778c;
+}
+
+#type {
+  padding: 10px;
+  width: 327px;
+  height: 114px;
+  border: 1px solid #d0d9d4;
+  border-radius: 4px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #091e42;
+}
+
+.display-error {
+  font-size: 15px !important;
+  color: red;
+  padding: 0;
+}
+
+.Xpopmenu {
+  float: right;
+  cursor: pointer;
+}
+
+.buttonDiv {
+  padding: 8px;
+  background: #36b37f;
+  border-radius: 4px;
+  border-style: none;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  color: #fff;
+  transition: background-color 0.3s ease, width 2s, height 2s;
+  gap: 60px;
+  width: 150px;
+}
+
+@media screen and (max-width: 354px) {
+  .titleWin {
+    padding: 4px;
+  }
+
+  .newpoplinks {
+    display: flex;
+    gap: 3.5px;
+  }
+
+  .newbuttonPop {
+    width: 110px;
+    padding: 8px 2px 8px 2px;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .newbuttonPop {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  img.Closepop {
+    left: 80%;
+    width: 30px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .poplinks {
+    top: 125%;
+  }
+}
+
 @media screen and (max-width: 768px) {
-  .headerSubMenu li {
-    display: none;
+  .poplinks {
+    top: 89%;
+    right: 20%;
+    height: 55px;
+    text-align: center;
   }
 
-  .about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 24px;
-    background-image: url("./Images/illustration-aboutme-mobile.png");
-    background-size: contain;
-    background-repeat: no-repeat;
+  .popupWindowImage {
+    padding-top: 0;
+    margin-top: -40px;
   }
 
-  .contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #fname {
-    padding: 10px;
-    width: 327px;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #6b778c;
-  }
-
-  #email {
-    padding: 10px;
-    width: 327px;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #6b778c;
-  }
-
-  #type {
-    padding: 10px;
-    width: 327px;
-    height: 114px;
-    border: 1px solid #d0d9d4;
-    border-radius: 4px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #091e42;
+  .Closepop {
+    left: 89%;
+    top: 5%;
   }
 }
 
@@ -540,12 +747,88 @@ footer .social {
     height: 850px;
   }
 
+  .popupWindowImage {
+    padding-top: 0;
+    width: 100%;
+    margin-top: -1.2%;
+  }
+
+  .Closepop {
+    cursor: pointer;
+    align-items: end;
+    left: 95%;
+    top: -3%;
+    width: auto;
+    padding-bottom: 0;
+  }
+
+  .modal-body {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .poplinks {
+    display: flex;
+    gap: 12px;
+    min-width: 320px;
+  }
+
+  .newbuttonPop {
+    display: none;
+  }
+
+  .headerSubMenu {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    position: relative;
+    margin-top: -20px;
+    cursor: pointer;
+  }
+
+  .headerSubMenu li {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #3a4a42;
+    list-style: none;
+    padding: 5px 7px;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+  }
+
+  .headerSubMenu li a {
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #3a4a42;
+    list-style: none;
+    padding: 5px 7px;
+    border-radius: 0.3rem;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+  }
+
+  .headerSubMenu li a:hover {
+    background-color: #313741;
+    color: white;
+  }
+
+  .Secpopupwin.active {
+    display: flex;
+  }
+
   .header {
     display: none;
   }
 
   #fname {
-    width: 700px;
+    width: 400px;
   }
 
   .work {
@@ -608,51 +891,6 @@ footer .social {
   }
 }
 
-.contact {
-  display: flex;
-  justify-content: space-between;
-}
-
-#fname {
-  padding: 10px;
-  width: 400px;
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #6b778c;
-}
-
-#email {
-  padding: 10px;
-  width: 400px;
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #6b778c;
-}
-
-#type {
-  padding: 10px;
-  width: 400px;
-  height: 114px;
-  border: 1px solid #d0d9d4;
-  border-radius: 4px;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: #091e42;
-}
-
 @media screen and (min-width: 1024px) {
   #fname {
     width: 530px;
@@ -675,5 +913,9 @@ footer .social {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+  }
+
+  .modal-body {
+    display: flex;
   }
 }
